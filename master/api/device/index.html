@@ -1,0 +1,5924 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>silk-device-api master | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='max-width-4 mx-auto'>
+    <div class='clearfix md-mxn2'>
+      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+        <div class='py1 px2 top-0 bottom-0 left-0 bg-silkblue dark-link'>
+          <h3 class='mb0 no-anchor'>silk-device-api</h3>
+          <div class='mb1'><code>master</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#silk-battery'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-battery
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-batteryBattery'
+                        class='regular pre-open'>
+                        .Battery
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-camera'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-camera
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-cameraRect'
+                        class='regular pre-open'>
+                        .Rect
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-cameraCameraCallback'
+                        class='regular pre-open'>
+                        .CameraCallback
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-cameraCameraFrameFormat'
+                        class='regular pre-open'>
+                        .CameraFrameFormat
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-cameraCameraFrameSize'
+                        class='regular pre-open'>
+                        .CameraFrameSize
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-cameraFLASH_MODE'
+                        class='regular pre-open'>
+                        .FLASH_MODE
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-cameraCamera'
+                        class='regular pre-open'>
+                        .Camera
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-input'
+                  
+                  >
+                  silk-input
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-lights'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-lights
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-lightsbacklight'
+                        class='regular pre-open'>
+                        .backlight
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-lightskeyboard'
+                        class='regular pre-open'>
+                        .keyboard
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-lightsbuttons'
+                        class='regular pre-open'>
+                        .buttons
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-lightsbattery'
+                        class='regular pre-open'>
+                        .battery
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-lightsnotifications'
+                        class='regular pre-open'>
+                        .notifications
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-lightsattention'
+                        class='regular pre-open'>
+                        .attention
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-lightsbluetooth'
+                        class='regular pre-open'>
+                        .bluetooth
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-lightswifi'
+                        class='regular pre-open'>
+                        .wifi
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-ntp'
+                  
+                  >
+                  silk-ntp
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-sensors'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-sensors
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-sensorsSENSOR_TYPE'
+                        class='regular pre-open'>
+                        .SENSOR_TYPE
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sensorsinit'
+                        class='regular pre-open'>
+                        .init
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sensorsactivate'
+                        class='regular pre-open'>
+                        .activate
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sensorsdeactivate'
+                        class='regular pre-open'>
+                        .deactivate
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sensors.event:initialize'
+                        class='regular pre-open'>
+                        .initialize
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sensors.event:data'
+                        class='regular pre-open'>
+                        .data
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-sysutils'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-sysutils
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-sysutilsprocessthrow'
+                        class='regular pre-open'>
+                        .processthrow
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsexec'
+                        class='regular pre-open'>
+                        .exec
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsexecRetry'
+                        class='regular pre-open'>
+                        .execRetry
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsgetprop'
+                        class='regular pre-open'>
+                        .getprop
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsgetstrprop'
+                        class='regular pre-open'>
+                        .getstrprop
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsgetboolprop'
+                        class='regular pre-open'>
+                        .getboolprop
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsgetintprop'
+                        class='regular pre-open'>
+                        .getintprop
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsgetlistprop'
+                        class='regular pre-open'>
+                        .getlistprop
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilssetprop'
+                        class='regular pre-open'>
+                        .setprop
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsPropWatcher'
+                        class='regular pre-open'>
+                        .PropWatcher
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilstimeout'
+                        class='regular pre-open'>
+                        .timeout
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-sysutilsplaySound'
+                        class='regular pre-open'>
+                        .playSound
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-vibrator'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-vibrator
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-vibratorVibrator'
+                        class='regular pre-open'>
+                        .Vibrator
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-volume'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-volume
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'>Instance members</li>
+                      
+                      <li><a
+                        href='#silk-volume#level'
+                        class='regular pre-open'>
+                        #level
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-volume#level'
+                        class='regular pre-open'>
+                        #level
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-volume#mute'
+                        class='regular pre-open'>
+                        #mute
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-volume#mute'
+                        class='regular pre-open'>
+                        #mute
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-wifi'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-wifi
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'>Instance members</li>
+                      
+                      <li><a
+                        href='#silk-wifi#init'
+                        class='regular pre-open'>
+                        #init
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-wifi#shutdown'
+                        class='regular pre-open'>
+                        #shutdown
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-wifi#isOnline'
+                        class='regular pre-open'>
+                        #isOnline
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-wifi#online'
+                        class='regular pre-open'>
+                        #online
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-wifi#scan'
+                        class='regular pre-open'>
+                        #scan
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-wifi#joinNetwork'
+                        class='regular pre-open'>
+                        #joinNetwork
+                      </a></li>
+                      
+                      <li><a
+                        href='#silk-wifi#forgetNetwork'
+                        class='regular pre-open'>
+                        #forgetNetwork
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-alog'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-alog
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-alogdebug'
+                        class='regular pre-open'>
+                        .debug
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-alogverbose'
+                        class='regular pre-open'>
+                        .verbose
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-aloginfo'
+                        class='regular pre-open'>
+                        .info
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-alogwarn'
+                        class='regular pre-open'>
+                        .warn
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-alogerror'
+                        class='regular pre-open'>
+                        .error
+                      </a></li>
+                    
+                      <li><a
+                        href='#silk-alogfatal'
+                        class='regular pre-open'>
+                        .fatal
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-movie'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-movie
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-movieMovie'
+                        class='regular pre-open'>
+                        .Movie
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#silk-properties'
+                  
+                  class='toggle-sibling'
+                  
+                  >
+                  silk-properties
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'>Static members</li>
+                    
+                      <li><a
+                        href='#silk-propertiesget'
+                        class='regular pre-open'>
+                        .get
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='fix-margin-3'>
+        <div class='px2'>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-battery' class='mt0'>
+    silk-battery
+  </h3>
+
+  <p>Silk battery module. Following events are supported by this module.</p>
+<p><code>needs-to-charge</code> event. This event is emitted when battery capacity
+is too low to boot.</p>
+<p><code>out-of-power</code> event. This event is emitted when battery capacity
+is too low to continue normal operation.</p>
+
+
+  <div class='pre p1 fill-light'>silk-battery</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> Battery = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-battery'</span>).default;
+
+<span class="hljs-keyword">let</span> battery = <span class="hljs-keyword">new</span> Battery();
+battery.init()
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  battery.on(<span class="hljs-string">'out-of-power'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    log.info(<span class="hljs-string">'Device running out of battery; shutting down...'</span>);
+  });
+})
+.catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+  log.error(<span class="hljs-string">'Failed to initialize battery'</span>, err);
+});</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-batteryBattery'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>new Battery</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Silk Battery class
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-batteryBattery' class='mt0'>
+    Battery
+  </h3>
+
+  <p>Silk Battery class</p>
+
+
+  <div class='pre p1 fill-light'>new Battery</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4>Instance members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-batteryBattery#init'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>init: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Initialize battery module
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-batteryBattery#init' class='mt0'>
+    init
+  </h3>
+
+  <p>Initialize battery module</p>
+
+
+  <div class='pre p1 fill-light'>init: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-camera' class='mt0'>
+    silk-camera
+  </h3>
+
+  <p>Silk Camera module</p>
+
+
+  <div class='pre p1 fill-light'>silk-camera</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-meta">'use strict'</span>;
+<span class="hljs-keyword">const</span> Camera = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-camera'</span>).default;
+<span class="hljs-keyword">let</span> camera = <span class="hljs-keyword">new</span> Camera();
+camera.init()
+.then(() =&gt; {
+  camera.startRecording();
+});
+camera.on(<span class="hljs-string">'frame'</span>, (when, image) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Received a frame at timestamp'</span>, when, <span class="hljs-string">'-'</span>, image);
+});</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-cameraRect'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>Rect</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Type representing an object rectangle
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraRect' class='mt0'>
+    Rect
+  </h3>
+
+  <p>Type representing an object rectangle</p>
+
+
+  <div class='pre p1 fill-light'>Rect</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    <h4>Properties</h4>
+    <ul>
+      
+        <li><code>x</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: x co-ordinate of the object rectangle
+
+          
+        </li>
+      
+        <li><code>y</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: y co-ordinate of the object rectangle
+
+          
+        </li>
+      
+        <li><code>width</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: width of the object rectangle
+
+          
+        </li>
+      
+        <li><code>height</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: height of the object rectangle
+
+          
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCameraCallback'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>CameraCallback</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Type representing the camera frame callback
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCameraCallback' class='mt0'>
+    CameraCallback
+  </h3>
+
+  <p>Type representing the camera frame callback</p>
+
+
+  <div class='pre p1 fill-light'>CameraCallback</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    <h4>Properties</h4>
+    <ul>
+      
+        <li><code>err</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</em>: True if the frame is retrieved succesfully, false
+otherwise
+
+          
+        </li>
+      
+        <li><code>image</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</em>: Requested preivew image as per the specified
+CameraFrameFormat format
+
+          
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCameraFrameFormat'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>CameraFrameFormat</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">The available camera frame formats:
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCameraFrameFormat' class='mt0'>
+    CameraFrameFormat
+  </h3>
+
+  <p>The available camera frame formats:</p>
+
+
+  <div class='pre p1 fill-light'>CameraFrameFormat</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'>fullgray - full resolution grayscale   (CameraFrameSize === <span class="hljs-string">'full'</span>)
+fullrgb  - full resolution rgb         (CameraFrameSize === <span class="hljs-string">'full'</span>)
+highgray - higher res grayscale        (CameraFrameSize === <span class="hljs-string">'high'</span>)
+gray     - normal grayscale            (CameraFrameSize === <span class="hljs-string">'normal'</span>)
+grayeq   - normal grayscale equalized  (CameraFrameSize === <span class="hljs-string">'normal'</span>)
+rgb      - normal rgb                  (CameraFrameSize === <span class="hljs-string">'normal'</span>)
+lowgray  - lower res grayscale         (CameraFrameSize === <span class="hljs-string">'low'</span>)</pre>
+    
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCameraFrameSize'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>CameraFrameSize</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">The available camera frame sizes:
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCameraFrameSize' class='mt0'>
+    CameraFrameSize
+  </h3>
+
+  <p>The available camera frame sizes:</p>
+
+
+  <div class='pre p1 fill-light'>CameraFrameSize</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'>full - full resolution frame
+high - higher resolution frame <span class="hljs-keyword">for</span> image analysis
+normal - normal frame size <span class="hljs-keyword">for</span> image analysis
+low - lower resolution frame <span class="hljs-keyword">for</span> image analysis</pre>
+    
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraFLASH_MODE'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>FLASH_MODE</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Flash modes as defined in &lt;camera/CameraParameters.cpp&gt;
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraFLASH_MODE' class='mt0'>
+    FLASH_MODE
+  </h3>
+
+  <p>Flash modes as defined in &lt;camera/CameraParameters.cpp&gt;</p>
+
+
+  <div class='pre p1 fill-light'>FLASH_MODE</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>new Camera</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Class that talks to capture service to receive camera frames
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera' class='mt0'>
+    Camera
+  </h3>
+
+  <p>Class that talks to capture service to receive camera frames</p>
+<p>TODO: Document emitted events</p>
+
+
+  <div class='pre p1 fill-light'>new Camera</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4>Instance members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-cameraCamera#init'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>init</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Initialize camera stream
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#init' class='mt0'>
+    init
+  </h3>
+
+  <p>Initialize camera stream</p>
+
+
+  <div class='pre p1 fill-light'>init</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#ready'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>ready: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Block until the camera is online and operational.
+IMPORTANT: Since the camera can crash at any time, once this method returns
+it&#x27;s never guaranteed that the camera is STILL online
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#ready' class='mt0'>
+    ready
+  </h3>
+
+  <p>Block until the camera is online and operational.
+IMPORTANT: Since the camera can crash at any time, once this method returns
+it&#x27;s never guaranteed that the camera is STILL online</p>
+
+
+  <div class='pre p1 fill-light'>ready: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#startRecording'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>startRecording</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Start camera recording
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#startRecording' class='mt0'>
+    startRecording
+  </h3>
+
+  <p>Start camera recording</p>
+
+
+  <div class='pre p1 fill-light'>startRecording</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#stopRecording'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>stopRecording</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Stop camera recording
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#stopRecording' class='mt0'>
+    stopRecording
+  </h3>
+
+  <p>Stop camera recording</p>
+
+
+  <div class='pre p1 fill-light'>stopRecording</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#flash'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>flash(flashMode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Set flash mode as specified by flashMode parameter
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#flash' class='mt0'>
+    flash
+  </h3>
+
+  <p>Set flash mode as specified by flashMode parameter</p>
+
+
+  <div class='pre p1 fill-light'>flash(flashMode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>flashMode</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: flash-mode parameter to set in camera
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#setMute'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>setMute(mute: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Set mute mode
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#setMute' class='mt0'>
+    setMute
+  </h3>
+
+  <p>Set mute mode</p>
+
+
+  <div class='pre p1 fill-light'>setMute(mute: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>mute</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</em>: Mute mic true or false
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#getParameterInt'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getParameterInt(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get integer camera parameter. This function returns a Promise that resolves
+when the parameter value is successfully retrieved
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#getParameterInt' class='mt0'>
+    getParameterInt
+  </h3>
+
+  <p>Get integer camera parameter. This function returns a Promise that resolves
+when the parameter value is successfully retrieved</p>
+
+
+  <div class='pre p1 fill-light'>getParameterInt(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>name</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: of camera parameter to get
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#getParameterStr'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getParameterStr(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get string camera parameter. This function returns a Promise that resolves
+when the parameter value is successfully retrieved
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#getParameterStr' class='mt0'>
+    getParameterStr
+  </h3>
+
+  <p>Get string camera parameter. This function returns a Promise that resolves
+when the parameter value is successfully retrieved</p>
+
+
+  <div class='pre p1 fill-light'>getParameterStr(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>name</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: of camera parameter to get
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#videoSize'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>videoSize: Size</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Returns the camera video size.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#videoSize' class='mt0'>
+    videoSize
+  </h3>
+
+  <p>Returns the camera video size.</p>
+
+
+  <div class='pre p1 fill-light'>videoSize: Size</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      Size:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#getFrameSize'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getFrameSize(frameSize: CameraFrameSize): Size</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Returns the camera frame size.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#getFrameSize' class='mt0'>
+    getFrameSize
+  </h3>
+
+  <p>Returns the camera frame size.</p>
+
+
+  <div class='pre p1 fill-light'>getFrameSize(frameSize: CameraFrameSize): Size</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>frameSize</code> <em>(CameraFrameSize)</em>: Frame size of interest (&#x27;normal&#x27; if null)
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      Size:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#normalRectsTo'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>normalRectsTo(rects: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;Rect&gt;, frameSize: CameraFrameSize): </span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Scales normalized rectangles to the specified CameraFrameSize
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#normalRectsTo' class='mt0'>
+    normalRectsTo
+  </h3>
+
+  <p>Scales normalized rectangles to the specified CameraFrameSize</p>
+
+
+  <div class='pre p1 fill-light'>normalRectsTo(rects: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;Rect&gt;, frameSize: CameraFrameSize): </div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>rects</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;Rect&gt;)</em>: Array of normalized rectangles to scale
+
+          
+        </li>
+      
+        <li><code>frameSize</code> <em>(CameraFrameSize)</em>: Desired scale
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      :
+        Array of rectangles in the desired scale
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#normalRectsFrom'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>normalRectsFrom(rects: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;Rect&gt;, frameSize: CameraFrameSize): </span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Scales rectangles of the specified CameraFrameSize to the normal size
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#normalRectsFrom' class='mt0'>
+    normalRectsFrom
+  </h3>
+
+  <p>Scales rectangles of the specified CameraFrameSize to the normal size</p>
+
+
+  <div class='pre p1 fill-light'>normalRectsFrom(rects: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;Rect&gt;, frameSize: CameraFrameSize): </div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>rects</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;Rect&gt;)</em>: Array of rectangles to normalize
+
+          
+        </li>
+      
+        <li><code>frameSize</code> <em>(CameraFrameSize)</em>: Desired scale
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      :
+        Array of normalized rectangles
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-cameraCamera#getFrame'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getFrame(when: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, formats: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;CameraFrameFormat&gt;, userCb: CameraCallback): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;[Any]&gt;&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Obtain a camera frame in one or more formats
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-cameraCamera#getFrame' class='mt0'>
+    getFrame
+  </h3>
+
+  <p>Obtain a camera frame in one or more formats</p>
+
+
+  <div class='pre p1 fill-light'>getFrame(when: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, formats: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;CameraFrameFormat&gt;, userCb: CameraCallback): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;[Any]&gt;&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>when</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: timestamp of the frame to get
+
+          
+        </li>
+      
+        <li><code>formats</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;CameraFrameFormat&gt;)</em>: requested formats
+
+          
+        </li>
+      
+        <li><code>userCb</code> <em>(CameraCallback)</em>: callback that receives an error object and the image
+as an OpenCV matrix
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;[Any]&gt;&gt;
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-input' class='mt0'>
+    silk-input
+  </h3>
+
+  <p>Silk Input</p>
+
+
+  <div class='pre p1 fill-light'>silk-input</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> Input = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-input'</span>).default;
+<span class="hljs-keyword">let</span> input = <span class="hljs-keyword">new</span> Input();
+input.on(<span class="hljs-string">'down'</span>, e =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Key down event'</span>, <span class="hljs-built_in">JSON</span>.stringify(e));
+input.on(<span class="hljs-string">'up'</span>, e =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Key up event'</span>, <span class="hljs-built_in">JSON</span>.stringify(e));</pre>
+    
+  
+
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-lights' class='mt0'>
+    silk-lights
+  </h3>
+
+  <p>Silk lights module to provide controls for the backlight and
+other LEDs on the board</p>
+
+
+  <div class='pre p1 fill-light'>silk-lights</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> lights = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-lights'</span>);
+
+<span class="hljs-comment">// Keep the backlight on</span>
+<span class="hljs-keyword">let</span> backlight = lights.backlight;
+backlight.set(backlight.WHITE);</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-lightsbacklight'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>backlight</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightsbacklight' class='mt0'>
+    backlight
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>backlight</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-lightskeyboard'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>keyboard</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightskeyboard' class='mt0'>
+    keyboard
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>keyboard</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-lightsbuttons'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>buttons</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightsbuttons' class='mt0'>
+    buttons
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>buttons</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-lightsbattery'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>battery</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightsbattery' class='mt0'>
+    battery
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>battery</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-lightsnotifications'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>notifications</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightsnotifications' class='mt0'>
+    notifications
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>notifications</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-lightsattention'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>attention</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightsattention' class='mt0'>
+    attention
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>attention</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-lightsbluetooth'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>bluetooth</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightsbluetooth' class='mt0'>
+    bluetooth
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>bluetooth</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-lightswifi'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>wifi</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"></div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-lightswifi' class='mt0'>
+    wifi
+  </h3>
+
+  
+
+  <div class='pre p1 fill-light'>wifi</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-ntp' class='mt0'>
+    silk-ntp
+  </h3>
+
+  <p>Silk NTP time service</p>
+
+
+  <div class='pre p1 fill-light'>silk-ntp</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> ntp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-ntp'</span>).default;
+ntp.on(<span class="hljs-string">'time'</span>, () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'NTP time acquired'</span>));</pre>
+    
+  
+
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-sensors' class='mt0'>
+    silk-sensors
+  </h3>
+
+  <p>This module exposes functionality to activate/deactivate and read sensors
+data from various sensors available on the device.</p>
+
+
+  <div class='pre p1 fill-light'>silk-sensors</div>
+
+  
+    <p>
+      Extends
+      
+        <a href="#silk-sensors">silk-sensors</a>
+      
+    </p>
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> sensors = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-sensors'</span>);
+
+sensors.init();
+sensors.on(<span class="hljs-string">'initialize'</span>, () =&gt; {
+ sensors.activate(sensors.SENSOR_TYPE.LIGHT, <span class="hljs-number">250</span>);
+});
+sensors.on(<span class="hljs-string">'data'</span>, (sensorEvent) =&gt; {
+ log.info(<span class="hljs-string">'Sensor type: '</span> + sensorEvent.sensorType);
+ log.info(<span class="hljs-string">'Sensor values: + sensorEvent.values'</span>);
+});</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-sensorsSENSOR_TYPE'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>SENSOR_TYPE</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Type of sensors to interact with. For a full list of
+sensor types please refer to the source code.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sensorsSENSOR_TYPE' class='mt0'>
+    SENSOR_TYPE
+  </h3>
+
+  <p>Type of sensors to interact with. For a full list of
+sensor types please refer to the source code.</p>
+
+
+  <div class='pre p1 fill-light'>SENSOR_TYPE</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    <h4>Properties</h4>
+    <ul>
+      
+        <li><code>SENSOR_TYPE</code> <em>((ACCELEROMETER | LIGHT | PROXIMITY))</em>
+          
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sensorsinit'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>init</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Initialize the Sensors module
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sensorsinit' class='mt0'>
+    init
+  </h3>
+
+  <p>Initialize the Sensors module</p>
+
+
+  <div class='pre p1 fill-light'>init</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sensorsactivate'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>activate(sensorType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, rate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Activate a given sensor
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sensorsactivate' class='mt0'>
+    activate
+  </h3>
+
+  <p>Activate a given sensor</p>
+
+
+  <div class='pre p1 fill-light'>activate(sensorType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, rate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>sensorType</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: SENSOR_TYPE.* constant
+
+          
+        </li>
+      
+        <li><code>rate</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: Sensor polling rate in milliseconds
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sensorsdeactivate'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>deactivate(sensorType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Dectivate a given sensor
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sensorsdeactivate' class='mt0'>
+    deactivate
+  </h3>
+
+  <p>Dectivate a given sensor</p>
+
+
+  <div class='pre p1 fill-light'>deactivate(sensorType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>sensorType</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: SENSOR_TYPE.* constant
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sensors.event:initialize'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>initialize</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"><code>initialize</code>
+ event. This event is emitted when sensor class is initialized
+and is ready to activate/decativate a sensor.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sensors.event:initialize' class='mt0'>
+    initialize
+  </h3>
+
+  <p><code>initialize</code> event. This event is emitted when sensor class is initialized
+and is ready to activate/decativate a sensor.</p>
+
+
+  <div class='pre p1 fill-light'>initialize</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sensors.event:data'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>data</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate"><code>data</code>
+ event. This event is emitted when sensor data is available.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sensors.event:data' class='mt0'>
+    data
+  </h3>
+
+  <p><code>data</code> event. This event is emitted when sensor data is available.</p>
+
+
+  <div class='pre p1 fill-light'>data</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    <h4>Properties</h4>
+    <ul>
+      
+        <li><code>sensorType</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: One of the SENSOR_TYPE.* constants
+
+          
+        </li>
+      
+        <li><code>values</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;Any&gt;)</em>: : Sensor data as returned by the hardware sensor. The length and
+contents of the values array depends on which sensor type is being
+monitored. Please refer to 
+<code>hardware/sensors.h</code>
+ for details.
+
+          
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-sysutils' class='mt0'>
+    silk-sysutils
+  </h3>
+
+  <p>This module provides system utility functions</p>
+
+
+  <div class='pre p1 fill-light'>silk-sysutils</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> util = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-sysutils'</span>);
+
+util.getprop(<span class="hljs-string">'ro.product.name'</span>, <span class="hljs-string">'unknown'</span>);
+util.playSound(<span class="hljs-string">'/data/hello.mp3'</span>);</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-sysutilsprocessthrow'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>processthrow(e: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Throws an exception to the top level process exception handler, escaping any
+Promises that might otherwise consume the exception.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsprocessthrow' class='mt0'>
+    processthrow
+  </h3>
+
+  <p>Throws an exception to the top level process exception handler, escaping any
+Promises that might otherwise consume the exception.</p>
+
+
+  <div class='pre p1 fill-light'>processthrow(e: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>e</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Error string
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsexec'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>exec(cmd: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, args: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Execute a command
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsexec' class='mt0'>
+    exec
+  </h3>
+
+  <p>Execute a command</p>
+
+
+  <div class='pre p1 fill-light'>exec(cmd: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, args: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>cmd</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Command to execute
+
+          
+        </li>
+      
+        <li><code>args</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;)</em>: Arguments for the command
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>&gt;:
+        result - Object representing output of exec command
+
+      
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>:
+        result.code result code
+
+      
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:
+        result.stdout standard out stream
+
+      
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:
+        result.stderr standard error stream
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsexecRetry'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>execRetry(cmd: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, args: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;, retries: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, delayMs: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;ExecOutput&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Execute a command. Retry if it fails
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsexecRetry' class='mt0'>
+    execRetry
+  </h3>
+
+  <p>Execute a command. Retry if it fails</p>
+
+
+  <div class='pre p1 fill-light'>execRetry(cmd: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, args: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;, retries: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, delayMs: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;ExecOutput&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>cmd</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Command to execute
+
+          
+        </li>
+      
+        <li><code>args</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;)</em>: Arguments for the command
+
+          
+        </li>
+      
+        <li><code>retries</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: Number of retries
+
+          
+        </li>
+      
+        <li><code>delayMs</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: Delay in ms between each retry
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;ExecOutput&gt;:
+        Result of the command
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsgetprop'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)]): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get value of a system property. Check to see if system property
+is available. If property is not available check silk.prop file instead.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsgetprop' class='mt0'>
+    getprop
+  </h3>
+
+  <p>Get value of a system property. Check to see if system property
+is available. If property is not available check silk.prop file instead.</p>
+
+
+  <div class='pre p1 fill-light'>getprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)]): (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>prop</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the property to fetch
+
+          
+        </li>
+      
+        <li><code>defaultValue</code> <em>([(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)]
+          (default <code>null</code>)
+        )</em>: Default value to use if property is not available
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>):
+        Value of the property
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsgetstrprop'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getstrprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get value of a system property as string
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsgetstrprop' class='mt0'>
+    getstrprop
+  </h3>
+
+  <p>Get value of a system property as string</p>
+
+
+  <div class='pre p1 fill-light'>getstrprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>prop</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the property to fetch
+
+          
+        </li>
+      
+        <li><code>defaultValue</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]
+          (default <code>null</code>)
+        )</em>: Default value to use if property is not available
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:
+        Value of the property
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsgetboolprop'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getboolprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get value of a system property as boolean
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsgetboolprop' class='mt0'>
+    getboolprop
+  </h3>
+
+  <p>Get value of a system property as boolean</p>
+
+
+  <div class='pre p1 fill-light'>getboolprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>prop</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the property to fetch
+
+          
+        </li>
+      
+        <li><code>defaultValue</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>]
+          (default <code>false</code>)
+        )</em>: Default value to use if property is not available
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>:
+        Value of the property
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsgetintprop'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getintprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get value of a system property as integer
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsgetintprop' class='mt0'>
+    getintprop
+  </h3>
+
+  <p>Get value of a system property as integer</p>
+
+
+  <div class='pre p1 fill-light'>getintprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>prop</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the property to fetch
+
+          
+        </li>
+      
+        <li><code>defaultValue</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>]
+          (default <code>0</code>)
+        )</em>: Default value to use if property is not available
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>:
+        Value of the property
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsgetlistprop'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>getlistprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get value of a system property as string array
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsgetlistprop' class='mt0'>
+    getlistprop
+  </h3>
+
+  <p>Get value of a system property as string array</p>
+
+
+  <div class='pre p1 fill-light'>getlistprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, defaultValue: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>prop</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the property to fetch
+
+          
+        </li>
+      
+        <li><code>defaultValue</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;]
+          (default <code>[]</code>)
+        )</em>: Default value to use if property is not available
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>&gt;:
+        Value of the property
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilssetprop'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>setprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, value: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Set value of a system property as boolean
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilssetprop' class='mt0'>
+    setprop
+  </h3>
+
+  <p>Set value of a system property as boolean</p>
+
+
+  <div class='pre p1 fill-light'>setprop(prop: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, value: (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>prop</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the property to set
+
+          
+        </li>
+      
+        <li><code>value</code> <em>((<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>))</em>: Property value
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>:
+        [] Result
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsPropWatcher'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>new PropWatcher</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">This class provides helper utility to watch an android property and notify
+via an event if the specified property has changed
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsPropWatcher' class='mt0'>
+    PropWatcher
+  </h3>
+
+  <p>This class provides helper utility to watch an android property and notify
+via an event if the specified property has changed</p>
+
+
+  <div class='pre p1 fill-light'>new PropWatcher</div>
+
+  
+    <p>
+      Extends
+      
+        PropWatcher
+      
+    </p>
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-sysutilsPropWatcher.event:&lt;property_name&gt;'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'><property_name></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Property changed event. This event is emitted when the property being
+watched has changed.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsPropWatcher.event:&lt;property_name&gt;' class='mt0'>
+    &lt;property_name&gt;
+  </h3>
+
+  <p>Property changed event. This event is emitted when the property being
+watched has changed.</p>
+
+
+  <div class='pre p1 fill-light'><property_name></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    <h4>Properties</h4>
+    <ul>
+      
+        <li><code>Property</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: value
+
+          
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilstimeout'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>timeout(ms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Returns a promise that expires after the specified interval
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilstimeout' class='mt0'>
+    timeout
+  </h3>
+
+  <p>Returns a promise that expires after the specified interval</p>
+
+
+  <div class='pre p1 fill-light'>timeout(ms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>ms</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: Expiry interval
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-sysutilsplaySound'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>playSound(fileName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Play a sound file
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-sysutilsplaySound' class='mt0'>
+    playSound
+  </h3>
+
+  <p>Play a sound file</p>
+
+
+  <div class='pre p1 fill-light'>playSound(fileName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>fileName</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the audio file to play
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>:
+        Return a promise that is fulfilled when the sound
+is done playing. Reject the promise if there is an
+error.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-vibrator' class='mt0'>
+    silk-vibrator
+  </h3>
+
+  <p>Silk vibrator module</p>
+
+
+  <div class='pre p1 fill-light'>silk-vibrator</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> Vibrator = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-vibrator'</span>).default;
+<span class="hljs-keyword">let</span> vibrator = <span class="hljs-keyword">new</span> Vibrator();
+vibrator.pattern(<span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>);</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-vibratorVibrator'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>new Vibrator</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Silk vibrator class
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-vibratorVibrator' class='mt0'>
+    Vibrator
+  </h3>
+
+  <p>Silk vibrator class</p>
+
+
+  <div class='pre p1 fill-light'>new Vibrator</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4>Instance members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-vibratorVibrator#active'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>active: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Test if the vibrator is active
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-vibratorVibrator#active' class='mt0'>
+    active
+  </h3>
+
+  <p>Test if the vibrator is active</p>
+
+
+  <div class='pre p1 fill-light'>active: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-vibratorVibrator#on'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>on(duration: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Run the vibrator for the specified duration
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-vibratorVibrator#on' class='mt0'>
+    on
+  </h3>
+
+  <p>Run the vibrator for the specified duration</p>
+
+
+  <div class='pre p1 fill-light'>on(duration: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>duration</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: 
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-vibratorVibrator#off'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>off</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Turn off the vibrator
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-vibratorVibrator#off' class='mt0'>
+    off
+  </h3>
+
+  <p>Turn off the vibrator</p>
+
+
+  <div class='pre p1 fill-light'>off</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-vibratorVibrator#pattern'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>pattern(onDuration: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, offDuration: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, more: ...<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>&gt;)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Play a vibrator pattern
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-vibratorVibrator#pattern' class='mt0'>
+    pattern
+  </h3>
+
+  <p>Play a vibrator pattern</p>
+
+
+  <div class='pre p1 fill-light'>pattern(onDuration: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, offDuration: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, more: ...<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>&gt;)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>onDuration</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: 
+          
+        </li>
+      
+        <li><code>offDuration</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: 
+          
+        </li>
+      
+        <li><code>more</code> <em>(...<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>&gt;)</em>: 
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-volume' class='mt0'>
+    silk-volume
+  </h3>
+
+  <p>Silk volume module</p>
+
+
+  <div class='pre p1 fill-light'>silk-volume</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> volume = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-volume'</span>).default;
+volume.level = <span class="hljs-number">50</span>;
+volume.mute = <span class="hljs-literal">false</span>;</pre>
+    
+  
+
+  
+
+  
+    <h4>Instance members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-volume#level'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>level: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Gets the current volume level (0..100)
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-volume#level' class='mt0'>
+    level
+  </h3>
+
+  <p>Gets the current volume level (0..100)</p>
+
+
+  <div class='pre p1 fill-light'>level: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-volume#level'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>level(newlevel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): </span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Sets the current volume level (0..100)
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-volume#level' class='mt0'>
+    level
+  </h3>
+
+  <p>Sets the current volume level (0..100)</p>
+
+
+  <div class='pre p1 fill-light'>level(newlevel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): </div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>newlevel</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>: 
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-volume#mute'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>mute: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Gets the current volume mute
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-volume#mute' class='mt0'>
+    mute
+  </h3>
+
+  <p>Gets the current volume mute</p>
+
+
+  <div class='pre p1 fill-light'>mute: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-volume#mute'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>mute(newmute: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>): </span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Sets the current volume mute
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-volume#mute' class='mt0'>
+    mute
+  </h3>
+
+  <p>Sets the current volume mute</p>
+
+
+  <div class='pre p1 fill-light'>mute(newmute: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>): </div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>newmute</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</em>: 
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-wifi' class='mt0'>
+    silk-wifi
+  </h3>
+
+  <p>Silk wifi module</p>
+
+
+  <div class='pre p1 fill-light'>silk-wifi</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">const</span> wifi = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-wifi'</span>).default;
+
+wifi.init()
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> wifi.online();
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  log.info(<span class="hljs-string">'Wifi initialized successfully'</span>);
+})
+.catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+  log.error(<span class="hljs-string">'Failed to initialize wifi'</span>, err);
+});</pre>
+    
+  
+
+  
+
+  
+    <h4>Instance members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-wifi#init'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>init: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Initialize wifi module
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-wifi#init' class='mt0'>
+    init
+  </h3>
+
+  <p>Initialize wifi module</p>
+
+
+  <div class='pre p1 fill-light'>init: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-wifi#shutdown'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>shutdown: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Shutdown wifi subsystem on the device
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-wifi#shutdown' class='mt0'>
+    shutdown
+  </h3>
+
+  <p>Shutdown wifi subsystem on the device</p>
+
+
+  <div class='pre p1 fill-light'>shutdown: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-wifi#isOnline'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>isOnline: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Check if device is online
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-wifi#isOnline' class='mt0'>
+    isOnline
+  </h3>
+
+  <p>Check if device is online</p>
+
+
+  <div class='pre p1 fill-light'>isOnline: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-wifi#online'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>online: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Bring-up wifi subsystem online
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-wifi#online' class='mt0'>
+    online
+  </h3>
+
+  <p>Bring-up wifi subsystem online</p>
+
+
+  <div class='pre p1 fill-light'>online: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-wifi#scan'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>scan</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Initiate a wifi scan request. Result of the scan is available via event
+
+<code>scanResults</code>
+.
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-wifi#scan' class='mt0'>
+    scan
+  </h3>
+
+  <p>Initiate a wifi scan request. Result of the scan is available via event
+<code>scanResults</code>.</p>
+
+
+  <div class='pre p1 fill-light'>scan</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    <h4>Properties</h4>
+    <ul>
+      
+        <li><code>ssid</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>
+          
+        </li>
+      
+        <li><code>bssid</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>
+          
+        </li>
+      
+        <li><code>level</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</em>
+          
+        </li>
+      
+        <li><code>psk</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</em>: True if network requires WPA or PSK
+
+          
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'>wifi.scan();
+wifi.on(<span class="hljs-string">'scanResults'</span>, (result) =&gt; {
+  log.info(<span class="hljs-string">`ssid: <span class="hljs-subst">${result.ssid}</span>`</span>);
+  log.info(<span class="hljs-string">`bssid: <span class="hljs-subst">${result.bssid}</span>`</span>);
+  log.info(<span class="hljs-string">`bssid: <span class="hljs-subst">${result.level}</span>`</span>);
+  log.info(<span class="hljs-string">`bssid: <span class="hljs-subst">${result.psk}</span>`</span>);
+});</pre>
+    
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-wifi#joinNetwork'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>joinNetwork(ssid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, psk: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Issue a request to join the specified network
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-wifi#joinNetwork' class='mt0'>
+    joinNetwork
+  </h3>
+
+  <p>Issue a request to join the specified network</p>
+
+
+  <div class='pre p1 fill-light'>joinNetwork(ssid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, psk: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>ssid</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: Name of the network to connect to
+
+          
+        </li>
+      
+        <li><code>psk</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>])</em>: WPA2 PSK of the network to connect (null for Open)
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&lt;&gt;
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-wifi#forgetNetwork'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>forgetNetwork</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Issue a request to forget all previously known networks
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-wifi#forgetNetwork' class='mt0'>
+    forgetNetwork
+  </h3>
+
+  <p>Issue a request to forget all previously known networks</p>
+
+
+  <div class='pre p1 fill-light'>forgetNetwork</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-alog' class='mt0'>
+    silk-alog
+  </h3>
+
+  <p>Silk logging helper</p>
+
+
+  <div class='pre p1 fill-light'>silk-alog</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">import</span> log <span class="hljs-keyword">from</span> <span class="hljs-string">'silk-alog'</span>;
+
+log.fatal(<span class="hljs-string">'sos'</span>);
+log.error(<span class="hljs-string">'ono'</span>);
+log.warn(<span class="hljs-string">'tsktsk'</span>);
+log.info(<span class="hljs-string">'hi'</span>);
+log.verbose(<span class="hljs-string">'useless'</span>);
+log.debug(<span class="hljs-string">'assert(1 + 1 == 3)'</span>);
+
+log.info(<span class="hljs-string">'tag'</span>, <span class="hljs-string">'The default tag is "node"'</span>);</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-alogdebug'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>debug(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Print debug log message
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-alogdebug' class='mt0'>
+    debug
+  </h3>
+
+  <p>Print debug log message</p>
+
+
+  <div class='pre p1 fill-light'>debug(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>tag</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]
+          (default <code>&#39;node&#39;</code>)
+        )</em>: Source of the log message
+
+          
+        </li>
+      
+        <li><code>message</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: The message to log
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-alogverbose'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>verbose(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Print verbose log message
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-alogverbose' class='mt0'>
+    verbose
+  </h3>
+
+  <p>Print verbose log message</p>
+
+
+  <div class='pre p1 fill-light'>verbose(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>tag</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]
+          (default <code>&#39;node&#39;</code>)
+        )</em>: Source of the log message
+
+          
+        </li>
+      
+        <li><code>message</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: The message to log
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-aloginfo'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>info(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Print info log message
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-aloginfo' class='mt0'>
+    info
+  </h3>
+
+  <p>Print info log message</p>
+
+
+  <div class='pre p1 fill-light'>info(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>tag</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]
+          (default <code>&#39;node&#39;</code>)
+        )</em>: Source of the log message
+
+          
+        </li>
+      
+        <li><code>message</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: The message to log
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-alogwarn'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>warn(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Print warn log message
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-alogwarn' class='mt0'>
+    warn
+  </h3>
+
+  <p>Print warn log message</p>
+
+
+  <div class='pre p1 fill-light'>warn(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>tag</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]
+          (default <code>&#39;node&#39;</code>)
+        )</em>: Source of the log message
+
+          
+        </li>
+      
+        <li><code>message</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: The message to log
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-alogerror'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>error(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Print error log message
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-alogerror' class='mt0'>
+    error
+  </h3>
+
+  <p>Print error log message</p>
+
+
+  <div class='pre p1 fill-light'>error(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>tag</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]
+          (default <code>&#39;node&#39;</code>)
+        )</em>: Source of the log message
+
+          
+        </li>
+      
+        <li><code>message</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: The message to log
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-alogfatal'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>fatal(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Print fatal log message
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-alogfatal' class='mt0'>
+    fatal
+  </h3>
+
+  <p>Print fatal log message</p>
+
+
+  <div class='pre p1 fill-light'>fatal(tag: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>], message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>tag</code> <em>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>]
+          (default <code>&#39;node&#39;</code>)
+        )</em>: Source of the log message
+
+          
+        </li>
+      
+        <li><code>message</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: The message to log
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-movie' class='mt0'>
+    silk-movie
+  </h3>
+
+  <p>Silk movie module</p>
+
+
+  <div class='pre p1 fill-light'>silk-movie</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">let</span> Movie = <span class="hljs-built_in">require</span>(<span class="hljs-string">'silk-movie'</span>).Movie;
+
+<span class="hljs-keyword">let</span> movie = <span class="hljs-keyword">new</span> Movie();
+movie.run(path.join(__dirname, <span class="hljs-string">'splash.zip'</span>));</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-movieMovie'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>new Movie</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Silk Movie class
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-movieMovie' class='mt0'>
+    Movie
+  </h3>
+
+  <p>Silk Movie class</p>
+
+
+  <div class='pre p1 fill-light'>new Movie</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4>Instance members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-movieMovie#run'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>run</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Starts a new animation sequence using the provided file
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-movieMovie#run' class='mt0'>
+    run
+  </h3>
+
+  <p>Starts a new animation sequence using the provided file</p>
+
+
+  <div class='pre p1 fill-light'>run</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-movieMovie#stop'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>stop</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Stops the movie, leaving it visible
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-movieMovie#stop' class='mt0'>
+    stop
+  </h3>
+
+  <p>Stops the movie, leaving it visible</p>
+
+
+  <div class='pre p1 fill-light'>stop</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+	<div id='silk-movieMovie#hide'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>hide</span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Stops the movie and hides it
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-movieMovie#hide' class='mt0'>
+    hide
+  </h3>
+
+  <p>Stops the movie and hides it</p>
+
+
+  <div class='pre p1 fill-light'>hide</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h3 id='silk-properties' class='mt0'>
+    silk-properties
+  </h3>
+
+  <p>Silk system properties helper</p>
+
+
+  <div class='pre p1 fill-light'>silk-properties</div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <h4 class='caps quiet small'>Examples</h4>
+    
+      
+      <pre class='hljs css small'><span class="hljs-keyword">import</span> props <span class="hljs-keyword">from</span> <span class="hljs-string">'silk-properties'</span>;
+
+<span class="hljs-keyword">let</span> value = props.get(<span class="hljs-string">'persist.silk.main'</span>);
+log.info(<span class="hljs-string">'Value: '</span> + value);</pre>
+    
+  
+
+  
+    <h4>Static members</h4>
+    <div class="clearfix">
+      <div class="sm-col sm-col-7 h5">Method</div>
+      <div class="sm-col sm-col-5 h5">Description</div>
+      
+	<div id='silk-propertiesget'>
+	  <div class="clearfix toggle-sibling">
+	    <div class="py1 keyline-top sm-col sm-col-7">
+	      <a class='h6 toggle-step-sibling icon'>▸</a> <span class='pre'>get(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>
+	    </div>
+	    <div class="py1 keyline-top sm-col sm-col-5 h5 truncate">Get system property
+</div>
+	  </div>
+	  <div class="clearfix display-none toggle-target">
+	    <section class='py2 clearfix'>
+
+  <h3 id='silk-propertiesget' class='mt0'>
+    get
+  </h3>
+
+  <p>Get system property</p>
+
+
+  <div class='pre p1 fill-light'>get(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <h4>Parameters</h4>
+    <ol class='my1'>
+      
+        <li><code>key</code> <em>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</em>: The name of the system property to fetch
+
+          
+        </li>
+      
+    </ol>
+  
+
+  
+
+  
+    
+      <h4>Returns</h4>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>:
+        Returns the value of a system property or null if no such property exists
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+	  </div>
+	</div>
+      
+    </div>
+  
+
+  
+
+  
+</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
